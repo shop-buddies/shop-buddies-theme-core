@@ -1,0 +1,25 @@
+{
+  "article": [
+    {
+      "key": "person",
+      "namespace": "author",
+      "name": "Person",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "blog": [],
+  "collection": [],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [],
+  "product": [],
+  "variant": [],
+  "shop": []
+}

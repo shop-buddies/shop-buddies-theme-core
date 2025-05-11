@@ -1,0 +1,11 @@
+<script
+  src="{{ 'sbc-global-script.min.js' | asset_url }}"
+  defer="defer"
+></script>
+
+{% if request.design_mode %}
+  <script
+    src="{{ 'sbc-theme-customizer.min.js' | asset_url }}"
+    defer="defer"
+  ></script>
+{% endif %}

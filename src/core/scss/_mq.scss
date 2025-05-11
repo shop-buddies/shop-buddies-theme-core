@@ -1,0 +1,27 @@
+// Tablet breakpoint: 768px and up
+@mixin media-tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Laptop breakpoint: 1024px and up
+@mixin media-laptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Desktop breakpoint: 1440px and up
+@mixin media-desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+// Large desktop breakpoint: 1600px and up
+@mixin media-desktop-hd {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

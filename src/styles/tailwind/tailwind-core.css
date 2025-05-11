@@ -1,0 +1,6 @@
+/* Uncomment the line below if you need to normalize the default browser styles
+   and apply Tailwind's base layer for consistent rendering. */
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
