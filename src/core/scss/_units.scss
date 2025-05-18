@@ -1,0 +1,11 @@
+@use "sass:math";
+
+@function rem-calc($value, $base-font-size: 16px) {
+  $px-value: if(math.is-unitless($value), $value, math.div($value, 1px));
+  $px-base: if(
+    math.unit($base-font-size) == "px",
+    math.div($base-font-size, 1px),
+    $base-font-size
+  );
+  @return math.div($px-value, $px-base) * 1rem;
+}

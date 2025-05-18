@@ -1,0 +1,5 @@
+@use "units" as u;
+
+$container: u.rem-calc(1512);
+$font-heading: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-main: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;

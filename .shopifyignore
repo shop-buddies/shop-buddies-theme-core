@@ -1,0 +1,16 @@
+src/
+node_modules/
+cypress/
+devops/
+.gitignore
+gulpfile.js
+.eslintrc.json
+package.json
+package-lock.json
+tailwind.config.js
+cypress.config.js
+README.md
+.babelrc
+tsconfig.json
+webpack.config.js
+.env

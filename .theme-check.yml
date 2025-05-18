@@ -1,0 +1,58 @@
+root: .
+
+ignore:
+  - node_modules/*
+
+MissingAsset:
+  enabled: false
+
+MissingSchema:
+  enabled: true
+  severity: warning
+  ignore:
+  - "snippets/*"
+  - "layout/*"
+  - "src/snippets/*"
+  - "templates/*"
+
+RequiredLayoutThemeObject:
+  enabled: true
+  severity: error
+
+TranslationKeyExists:
+  enabled: true
+  severity: error
+
+UnclosedHTMLElement:
+  enabled: true
+  severity: error
+
+UndefinedObject:
+  enabled: false
+
+UnusedAssign:
+  enabled: true
+  severity: suggestion
+  ignore: []
+
+ValidHTMLTranslation:
+  enabled: true
+  severity: error
+
+ValidSchema:
+  enabled: true
+  severity: error
+
+ValidSchemaName:
+  enabled: true
+  severity: error
+
+VariableName:
+  enabled: true
+  severity: warning
+  format: snake_case
+
+ImgWidthAndHeight:
+  enabled: true
+  severity: suggestion
+  ignore: []
