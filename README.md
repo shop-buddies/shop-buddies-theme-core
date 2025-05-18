@@ -58,6 +58,7 @@ yarn cli        # Start Shopify CLI development server
 1. **Setup**:
    ```bash
    yarn install
+   yarn build
    ```
 
 2. **Start Development Servers**:
@@ -97,9 +98,15 @@ yarn cli        # Start Shopify CLI development server
   - Output: `assets/sbc-theme-customizer.min.js`
   - Purpose: Theme customization and settings management
 
-> **Note**: These compiled files should be included in your main layout file (`layout/theme.liquid`). The scripts should be added using the `sbc-layout-scripts` snippet:
+> **Note**: These compiled files should be included in your main layout file (`layout/theme.liquid`). 
+> 
+> The scripts should be added using the `sbc-layout-scripts` snippet:
 > ```liquid
 > {% render 'sbc-layout-scripts' %}
+> ```
+>  The global styles should be added using the `link:stylesheet` tag:
+> ```liquid
+>  <link rel="stylesheet" href="{{ 'sbc-global-styles.min.css' | asset_url }}">
 > ```
 > This ensures proper loading order and initialization of all core functionality.
 
@@ -194,9 +201,12 @@ yarn cli        # Start Shopify CLI development server
   - Minified for optimal performance
 - Customization:
   - Core component styles: `src/styles/tailwind/tailwind-core.css`
-  - Extend base styles and components
-  - Add custom utilities and variants
-  - Override default theme settings
+  - tailwind.config.js: `src/styles/tailwind/tailwind.config.js`
+
+> The tailwind styles should be added using the `link:stylesheet` tag:
+> ```liquid
+> <link rel="stylesheet" href="{{ 'sbc-tailwind.min.css' | asset_url }}">
+> ```
 
 ## 🔧 Configuration
 
